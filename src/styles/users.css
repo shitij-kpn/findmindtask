@@ -1,0 +1,47 @@
+.UserCard {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 30px black;
+  margin: 10px;
+  background: #0c2b5e;
+  background: -webkit-linear-gradient(to left, #0c2b5e, #173c77);
+  background: linear-gradient(to left, #2256a8, #2158af);
+}
+
+.UserCard img {
+  width: 100%;
+  height: 100%;
+  padding: 10px 10px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+h3,
+h4 {
+  padding: 10px 0px 30px 0px;
+}
+
+a {
+  color: rgb(255, 255, 255);
+  font-family: helvetica;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.UserCardTop {
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+
+.UserCardBottom {
+  min-height: 40%;
+  min-width: 100%;
+  max-width: 100%;
+  padding: 20px 5px;
+}
