@@ -3,9 +3,7 @@
   border-radius: 10px;
   box-shadow: 5px 5px 30px black;
   margin: 10px;
-  background: #3a85ff;
-  background: -webkit-linear-gradient(to left, #3f89ff, #0b62f0);
-  background: linear-gradient(to left, #3b86ff, #0c69ff);
+  background: #fdcd3b;
 }
 
 .UserCard img {

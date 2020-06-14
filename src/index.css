@@ -6,8 +6,8 @@
 body {
   font-size: 92%;
   font-family: "Quicksand", sans-serif;
-  color: white;
-  background: #84ffff;
+  color: rgb(255, 255, 255);
+  background: #414141;
   /* background: -webkit-linear-gradient(
     to right,
     #26d0ce,
