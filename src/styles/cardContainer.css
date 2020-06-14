@@ -2,4 +2,18 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  padding-bottom: 50px;
+}
+
+.button-style {
+  color: #fff !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #fdcd3b;
+  padding: 20px;
+  border-radius: 50px;
+  display: inline-block;
+  border: none;
+  transition: all 0.4s ease 0s;
+  cursor: pointer;
 }

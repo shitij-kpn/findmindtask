@@ -1,6 +1,6 @@
 import React from 'react'
 import {connect} from 'react-redux'
-
+import {requestUsers} from './../actions/userAction'
 import UserCard from './userCard'
 import '../styles/cardContainer.css'
 
@@ -9,7 +9,7 @@ const mapStateToProps = (state) => ({
     error: state.error
 })
 
-function CardContainer({users,error}) {
+function CardContainer({users,error,dispatch}) {
     if(!users){
     return <p>{error}</p>
     }
@@ -23,9 +23,12 @@ function CardContainer({users,error}) {
             />)
         )
         return (
-            <div className="card-container">
-                {userCards}
-            </div>
+            <>
+                <div className="card-container">
+                    {userCards}
+                </div>
+                <button className="button-style" onClick={() => dispatch(requestUsers())}>Load other images</button>
+            </>
         )
     }   
 }

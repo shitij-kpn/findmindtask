@@ -23,9 +23,10 @@ export const requestUsersFail = ({ message }) => {
 };
 
 export const requestUsers = () => (dispatch, getState) => {
+  const pno = Math.floor(Math.random() * 200);
   dispatch(requestUsersPending());
   axios
-    .get(`https://picsum.photos/v2/list?limit=4`)
+    .get(`https://picsum.photos/v2/list?page=${pno}&limit=3`)
     .then(({ data }) => dispatch(requestUsersSuccess(data)))
     .catch((error) => dispatch(requestUsersFail(error)));
 };
